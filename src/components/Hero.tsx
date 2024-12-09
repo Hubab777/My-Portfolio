@@ -14,7 +14,7 @@ const handleClick = () => {
   return (
     <div
       id="hero"
-      className="min-h-screen bg-no-repeat bg-[url(/profile.jpg)] bg-right lg:bg-[20%] sm:bg-[20%]"
+      className="min-h-screen bg-no-repeat bg-[url(/profile.jpg)] bg-right lg:bg-[40%] sm:bg-[30%] flex flex-col"
       style={{
         backgroundSize: "30%",
         backgroundPosition: "right 100px top 100px",
@@ -25,19 +25,21 @@ const handleClick = () => {
 
         <div className="font-bold leading-tight justify-center items-center mt-0 pt-10 sm:pt-14 lg:pt-20">
           <div>
-            <p className="text-[60px] sm:text-[80px] font-bold leading-tight">
+            <p className="text-[60px] sm:text-[80px] sm: 2/4 font-bold leading-tight">
               ℑ'𝔪
             </p>
-            <p className="text-[60px] sm:text-[80px] font-bold leading-tight">
+            <p className="text-[60px] sm:text-[80px] sm:2/4 font-bold leading-tight">
               ℌ𝔲𝔟𝔞𝔟
             </p>
-            <p className="text-[60px] sm:text-[80px] font-bold leading-tight">
+            <p className="text-[60px] sm:text-[80px] sm:2/4 font-bold leading-tight">
               ℑ𝓀𝔯𝔞𝔪
             </p>
 
           </div>
-          <div className="bg-gray-600 h-[4px] w-[530px]"></div>
-          <h3 className="text-2xl mt-3">
+          <div className="bg-gray-600 h-[4px] w-[530px] overflow-x-hidden md:block sm:min-w-screen mt-4 mr-16"></div>
+           <div className="overflow-x-hidden max-w-[800px] sm:block 
+mr-16 pr-8 md:block">
+          <h3 className="text-2xl mt-3 mr-10">
   <TypeAnimation
     sequence={[
       "Frontend Developer",
@@ -58,6 +60,7 @@ const handleClick = () => {
  <p > Fusing strategy and creativity to create experiences that resonate. </p>
  <p > Thriving on complexity, delivering simplicity with impact.
 </p>
+</div>
 </div>
 <button
             onClick={handleClick}
