@@ -44,7 +44,7 @@ const Navbar = () => {
 
         {/* Mobile menu (Toggle visibility on click) */}
         {isMenuOpen && (
-          <ul className="flex flex-col items-center absolute top-16 left-0 w-full bg-white shadow-lg">
+          <ul className="flex flex-col items-center absolute top-16 left-0 w-full bg-gray-500 shadow-lg">
             <li className="menuLink p-4">
               <a href="#hero" onClick={toggleMenu}>Home</a>
             </li>
